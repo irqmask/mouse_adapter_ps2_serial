@@ -1,0 +1,1 @@
+avrdude -c avrispmkII -p t2313 -e -U flash:w:mouse.hex -U flash:v:mouse.hex

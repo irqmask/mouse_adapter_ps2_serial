@@ -1,0 +1,1 @@
+avrdude -c avrispmkII -p t2313 -U lfuse:w:0xEE:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m

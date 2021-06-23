@@ -1,0 +1,6 @@
+fp-info-cache
+*.sch-bak
+*.hex
+*.obj
+*.sik
+*.cof
