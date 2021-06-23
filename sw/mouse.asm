@@ -3,7 +3,7 @@
 ;
 ; Adapter to connect a PS/2 mouse to a PC with only a serial port.
 ;
-; Copyright (C) 2021  christian <irqmask@gmx.de>
+; Copyright (C) 2021  christian <irqmask@web.de>
 ;
 ; This program is free software: you can redistribute it and/or modify
 ; it under the terms of the GNU General Public License as published by
