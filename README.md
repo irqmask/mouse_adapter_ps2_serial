@@ -7,6 +7,31 @@ Currently tested with 2-button ball mouses. Untested with optical mouses, yet.
 
 I made this for fun, use this software and built hardware at your own risk (and with great fun)!
 
+# Hardware
+
+The hardware basically consists of a ATtiny2313 microcontroller and a MAX232 level shifter. The PS/2 is connected to the INT0 and INT1 pins of the ATtiny2313. The internal pull-up resistors are used for the idle state. 
+
+The serial mouse is connected via a MAX232 to the UART of the ATtiny2313.
+The schematics will give more details.
+
+![Schematic](hw/mouse.pdf)
+
+This is the first prototype.
+
+![This is the first prototype](doc/prototype_1_pcb_w_descr_1024w.jpg)
+
+The PS/2 connection is matching the connector of the PS/2 connector bracket which I found in an assortment of old computer cables.
+
+![PS/2 connection](doc/prototype_2_ps2_1024w.jpg)
+
+The RS232 connection for the mouse is a 1:1 connection between the Pin-header and the DB9 connector.
+This allows to mount it inside an old PC and connect it directly to the interface card. 
+
+![RS232 connection](doc/prototype_3_rs232_1024w.jpg)
+
+Do not use the type of DB9 connectors which are crimped directly onto the cable! 
+
+# Software
 
 ## How to build and program
 
