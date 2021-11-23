@@ -1,0 +1,10 @@
+TODO
+- tool to inspect PS/2 communication
+-- rs232 115200bd ascii terminal
+-- ps/2 read-only port
+-- convert host messages to ascii
+-- convert device messages to ascii
+-- use same PCB. Insert pin-header for RS232 TTL level before MAX232 for usage with TTL-USB adapters
+- Make PCB layout 
+- build two additional adapters. One for Laptop, one as test-tool
+- Make SMD version

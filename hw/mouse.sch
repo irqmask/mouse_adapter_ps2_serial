@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:mouse-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L connectors:Mini-DIN-6 J7
+L mouse-rescue:Mini-DIN-6-connectors J7
 U 1 1 60A5670F
 P 8900 3350
 F 0 "J7" H 8900 3717 50  0000 C CNN
@@ -102,12 +103,12 @@ F 3 "" H 8900 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L ics_controller_atmel:ATtiny2313-20PU U2
+L mouse-rescue:ATtiny2313-20PU-ics_controller_atmel U2
 U 1 1 60A609EE
 P 3050 5250
 F 0 "U2" H 2600 6300 50  0000 C CNN
 F 1 "ATtiny2313-20PU" H 3050 5250 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 3050 5250 50  0001 C CIN
+F 2 "Housings_DIP:DIP20" H 3050 5250 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf" H 3050 5250 50  0001 C CNN
 	1    3050 5250
 	1    0    0    -1  
@@ -390,7 +391,7 @@ U 1 1 60AFD241
 P 1400 4450
 F 0 "C1" H 1400 4690 50  0000 C CNN
 F 1 "4,7nF" H 1400 4599 50  0000 C CNN
-F 2 "Capacitors_THT:C_RM5.08mm_5x5mm" H 1400 4450 60  0001 C CNN
+F 2 "Capacitors_THT:C_RM5.08mm_5x2.5mm" H 1400 4450 60  0001 C CNN
 F 3 "" H 1400 4450 60  0000 C CNN
 	1    1400 4450
 	1    0    0    -1  
@@ -983,6 +984,7 @@ Wire Bus Line
 Connection ~ 5800 6250
 Wire Bus Line
 	7800 3650 5800 3650
+Connection ~ 7800 3650
 Wire Bus Line
 	9550 3350 9550 3650
 Wire Bus Line
@@ -995,5 +997,4 @@ Wire Bus Line
 	3950 5450 3950 6250
 Wire Bus Line
 	8300 5200 8300 6250
-Connection ~ 7800 3650
 $EndSCHEMATC
