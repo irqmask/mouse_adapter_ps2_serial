@@ -202,11 +202,11 @@ P 277 0 1 0 132 -171 130 -170 125 -167 118 -162 109 -156 100 -150 93 -146 88 -14
 ENDDRAW
 ENDDEF
 #
-# mouse-rescue_ATtiny2313-20PU-ics_controller_atmel
+# mouse-rescue_ATtiny2313-20PU-ics_controller_atmel-mouse-rescue
 #
-DEF mouse-rescue_ATtiny2313-20PU-ics_controller_atmel U 0 20 Y Y 1 F N
+DEF mouse-rescue_ATtiny2313-20PU-ics_controller_atmel-mouse-rescue U 0 20 Y Y 1 F N
 F0 "U" -500 1050 50 H V L BNN
-F1 "mouse-rescue_ATtiny2313-20PU-ics_controller_atmel" 100 -1050 50 H V L TNN
+F1 "mouse-rescue_ATtiny2313-20PU-ics_controller_atmel-mouse-rescue" 100 -1050 50 H V L TNN
 F2 "Package_DIP:DIP-20_W7.62mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -237,11 +237,11 @@ X PD5 9 600 -600 100 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# mouse-rescue_Mini-DIN-6-connectors
+# mouse-rescue_Mini-DIN-6-connectors-mouse-rescue
 #
-DEF mouse-rescue_Mini-DIN-6-connectors J 0 40 Y Y 1 F N
+DEF mouse-rescue_Mini-DIN-6-connectors-mouse-rescue J 0 40 Y Y 1 F N
 F0 "J" 0 250 50 H V C CNN
-F1 "mouse-rescue_Mini-DIN-6-connectors" 0 -250 50 H V C CNN
+F1 "mouse-rescue_Mini-DIN-6-connectors-mouse-rescue" 0 -250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -292,7 +292,7 @@ ENDDEF
 #
 # power_GND
 #
-DEF ~power_GND #PWR 0 10 Y Y 1 F P
+DEF power_GND #PWR 0 10 Y Y 1 F P
 F0 "#PWR" 0 -200 50 H I C CNN
 F1 "power_GND" 0 -110 50 H I C CNN
 F2 "" 0 0 50 H I C CNN

@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:mouse-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,12 +14,12 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L mouse-rescue:Mini-DIN-6-connectors J7
+L mouse-rescue:Mini-DIN-6-connectors-mouse-rescue J7
 U 1 1 60A5670F
 P 8900 3350
 F 0 "J7" H 8900 3717 50  0000 C CNN
 F 1 "Mini-DIN-6" H 8900 3626 50  0000 C CNN
-F 2 "" H 8900 3350 50  0001 C CNN
+F 2 "Connector_Miscelleaneus:MiniDIN_6pole" H 8900 3350 50  0001 C CNN
 F 3 "http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf" H 8900 3350 50  0001 C CNN
 	1    8900 3350
 	1    0    0    -1  
@@ -103,7 +102,7 @@ F 3 "" H 8900 5200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mouse-rescue:ATtiny2313-20PU-ics_controller_atmel U2
+L mouse-rescue:ATtiny2313-20PU-ics_controller_atmel-mouse-rescue U2
 U 1 1 60A609EE
 P 3050 5250
 F 0 "U2" H 2600 6300 50  0000 C CNN

@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/christian/Projekte/mouse_adapter_ps2_serial/hw/mouse.sch)
-    (date "Di 19 Okt 2021 11:06:11 CEST")
-    (tool "Eeschema 5.0.2-bee76a0~70~ubuntu18.04.1")
+    (source /media/nas/Werkstatt/Projekte/mouse/hw/mouse.sch)
+    (date "Di 23 Nov 2021 22:35:55 CET")
+    (tool "Eeschema 5.1.12-84ad8e8a86~92~ubuntu20.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title "PS/2 to Serial Mouse Adapter")
@@ -17,8 +17,9 @@
   (components
     (comp (ref J7)
       (value Mini-DIN-6)
+      (footprint Connector_Miscelleaneus:MiniDIN_6pole)
       (datasheet http://service.powerdynamics.com/ec/Catalog17/Section%2011.pdf)
-      (libsource (lib mouse-rescue) (part Mini-DIN-6-connectors) (description ""))
+      (libsource (lib mouse-rescue) (part Mini-DIN-6-connectors-mouse-rescue) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A5670F))
     (comp (ref U1)
@@ -67,7 +68,7 @@
       (value ATtiny2313-20PU)
       (footprint Housings_DIP:DIP20)
       (datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2543-AVR-ATtiny2313_Datasheet.pdf)
-      (libsource (lib mouse-rescue) (part ATtiny2313-20PU-ics_controller_atmel) (description ""))
+      (libsource (lib mouse-rescue) (part ATtiny2313-20PU-ics_controller_atmel-mouse-rescue) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 60A609EE))
     (comp (ref C2)
@@ -288,12 +289,12 @@
       (fields
         (field (name Reference) LOGO)
         (field (name Value) OPEN_HARDWARE_1)))
-    (libpart (lib mouse-rescue) (part ATtiny2313-20PU-ics_controller_atmel)
+    (libpart (lib mouse-rescue) (part ATtiny2313-20PU-ics_controller_atmel-mouse-rescue)
       (footprints
         (fp DIP*W7.62mm*))
       (fields
         (field (name Reference) U)
-        (field (name Value) ATtiny2313-20PU-ics_controller_atmel)
+        (field (name Value) ATtiny2313-20PU-ics_controller_atmel-mouse-rescue)
         (field (name Footprint) Package_DIP:DIP-20_W7.62mm))
       (pins
         (pin (num 1) (name PA2/~RESET) (type BiDi))
@@ -316,12 +317,12 @@
         (pin (num 18) (name PB6) (type BiDi))
         (pin (num 19) (name PB7) (type BiDi))
         (pin (num 20) (name VCC) (type power_in))))
-    (libpart (lib mouse-rescue) (part Mini-DIN-6-connectors)
+    (libpart (lib mouse-rescue) (part Mini-DIN-6-connectors-mouse-rescue)
       (footprints
         (fp MINI?DIN*))
       (fields
         (field (name Reference) J)
-        (field (name Value) Mini-DIN-6-connectors))
+        (field (name Value) Mini-DIN-6-connectors-mouse-rescue))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))
@@ -379,7 +380,7 @@
     (library (logical logo)
       (uri /home/christian/Projekte/electronic/00library/kicad/01symbols/logo.lib))
     (library (logical mouse-rescue)
-      (uri /home/christian/Projekte/mouse_adapter_ps2_serial/hw/mouse-rescue.lib))
+      (uri /media/nas/Werkstatt/Projekte/mouse/hw/mouse-rescue.lib))
     (library (logical standard)
       (uri /home/christian/Projekte/electronic/00library/kicad/01symbols/standard.lib)))
   (nets
