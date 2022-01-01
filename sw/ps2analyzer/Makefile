@@ -218,7 +218,7 @@ AVRDUDE_FLAGS += $(AVRDUDE_NO_VERIFY)
 AVRDUDE_FLAGS += $(AVRDUDE_VERBOSE)
 AVRDUDE_FLAGS += $(AVRDUDE_ERASE_COUNTER)
 
-AVRDUDE_FUSES = -U lfuse:w:0xEE:m -U hfuse:w:0xDF:m -U efuse:w:0xFF:m
+AVRDUDE_FUSES = -U lfuse:w:0xEF:m -U hfuse:w:0xD9:m -U efuse:w:0xFF:m
 
 #---------------- Debugging Options ----------------
 
