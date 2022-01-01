@@ -31,7 +31,7 @@ ps2_init:
     out     _SFR_IO_ADDR(TCCR0A), r16
     ldi     r16, (1<<CS01)|(1<<CS00)        ; prescaler /64
     out     _SFR_IO_ADDR(TCCR0B), r16
-    ldi     r16, 80
+    ldi     r16, 240
     out     _SFR_IO_ADDR(OCR0A), r16
 
     rcall   ps2_reset_recv
