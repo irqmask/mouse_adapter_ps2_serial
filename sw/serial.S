@@ -6,7 +6,7 @@
 
 ; serial Baudrate of UART
 #ifndef BAUD
-#define BAUD        1200      
+#define BAUD        1200
 #endif
 
 ; calculations
@@ -18,13 +18,14 @@
 #define BAUD_ERROR  ((BAUD_REAL * 1000) / BAUD - 1000)
 
 ; max. +/-1% deviation
-#if ((BAUD_ERROR>10) || (BAUD_ERROR<-10))       
+#if ((BAUD_ERROR>10) || (BAUD_ERROR<-10))
   #error "Baudrate error > 1%"
 #endif
 
 
 .global serial_init
 serial_init:
+    push    r16
     ; set baudrate
     ldi     r16, hi8(UBRR_VAL)
     out     _SFR_IO_ADDR(UBRRH), r16
@@ -34,7 +35,8 @@ serial_init:
     ; 7bit,N,1
     sbi     _SFR_IO_ADDR(UCSRC), UCSZ1
     cbi     _SFR_IO_ADDR(UCSRC), UCSZ0
-    sbi     _SFR_IO_ADDR(UCSRB), TXEN 
+    sbi     _SFR_IO_ADDR(UCSRB), TXEN
+    pop     r16
     ret
 
 .global serial_send
