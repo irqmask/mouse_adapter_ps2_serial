@@ -1,11 +1,12 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:mouse-cache
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PS/2 to Serial Mouse Adapter"
-Date "2021-05-20"
+Date "2022-01-02"
 Rev "1"
 Comp ""
 Comment1 ""

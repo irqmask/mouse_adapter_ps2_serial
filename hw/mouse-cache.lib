@@ -292,7 +292,7 @@ ENDDEF
 #
 # power_GND
 #
-DEF power_GND #PWR 0 10 Y Y 1 F P
+DEF ~power_GND #PWR 0 10 Y Y 1 F P
 F0 "#PWR" 0 -200 50 H I C CNN
 F1 "power_GND" 0 -110 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
