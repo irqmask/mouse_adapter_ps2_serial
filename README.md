@@ -38,16 +38,16 @@ Do not use the type of DB9 connectors which are crimped directly onto the cable!
 First the assembler source code must be assembled into a hex file, then it can
 be programmed to the microcontroller.
 
-For assembling I use avra under ubuntu 18.04
+For assembling I use avr-gcc and avrdude under Ubuntu Linux
 
 To install the assembler, simply execute
 
-    sudo apt install avra
+    sudo apt install avr-gcc avrdude
     
 To assemble the microncontroller software execute:
 
     cd sw/
-    avra -I /usr/share/avra mouse.asm
+    make
     
 To program the device, avrdude is used with the AVR ISP mk2 programmer.
 The fuses of the controller need to be programmed:
@@ -58,3 +58,6 @@ The assembled hex file is programmed like this:
 
     avrdude -c avrispmkII -p t2313 -e -U flash:w:mouse.hex -U flash:v:mouse.hex
 
+or simply
+
+    make program
