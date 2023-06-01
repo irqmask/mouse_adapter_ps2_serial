@@ -42,7 +42,7 @@ For assembling I use avr-gcc and avrdude under Ubuntu Linux
 
 To install the assembler, simply execute
 
-    sudo apt install avr-gcc avrdude
+    sudo apt install gcc-avr avrdude
     
 To assemble the microncontroller software execute:
 
