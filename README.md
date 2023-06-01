@@ -32,7 +32,7 @@ This allows to mount it inside an old PC and connect it directly to the interfac
 Do not use the type of DB9 connectors which are crimped directly onto the cable! 
 
 # Software
-
+<img src="https://github.com/irqmask/mouse_adapter_ps2_serial/actions/workflows/makefile.yml/badge.svg"/>
 ## How to build and program
 
 First the assembler source code must be assembled into a hex file, then it can
