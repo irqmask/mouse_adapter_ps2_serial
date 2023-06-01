@@ -20,3 +20,8 @@ jobs:
     - name: build
       run: pushd sw && make && popd
       
+    - name: Upload vuild
+      uses: actions/upload-artifact@v1
+      with:
+          name: mouse.hex
+          path: sw
