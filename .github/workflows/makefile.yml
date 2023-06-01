@@ -23,5 +23,5 @@ jobs:
     - name: Upload vuild
       uses: actions/upload-artifact@v1
       with:
-          name: mouse.hex
-          path: sw
+          name: mouse
+          path: sw/*.hex
