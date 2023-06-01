@@ -1,0 +1,22 @@
+name: build_firmware
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: prerequities
+      run: sudo apt-get install avr-gcc make
+
+    - name: build
+      run: make
+      
