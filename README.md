@@ -5,7 +5,7 @@ Hope to help some retro-computer enthusiasts connecting a "more modern" mouse to
 
 Currently tested with 2-button ball mouses. Untested with optical mouses, yet.
 
-I made this for fun, use this software and built hardware at your own risk (and with great fun)!
+I made this for fun, use this software and self-built hardware at your own risk (and with great fun)!
 
 # Hardware
 
@@ -33,6 +33,7 @@ Do not use the type of DB9 connectors which are crimped directly onto the cable!
 
 # Software
 <img src="https://github.com/irqmask/mouse_adapter_ps2_serial/actions/workflows/makefile.yml/badge.svg"/>
+
 ## How to build and program
 
 First the assembler source code must be assembled into a hex file, then it can
@@ -44,7 +45,7 @@ To install the assembler, simply execute
 
     sudo apt install gcc-avr avr-libc avrdude
     
-To assemble the microncontroller software execute:
+To assemble the microcontroller software execute:
 
     cd sw/
     make
